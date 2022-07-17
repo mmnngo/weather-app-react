@@ -8,6 +8,24 @@ function App() {
     <div className="App">
       <div className="container">
         <Weather />
+        <p className="contact-me">
+          This page was built by May Ngo and is open-sourced on{" "}
+          <a
+            href="https://github.com/mmnngo/weather-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>{" "}
+          and hosted on{" "}
+          <a
+            href="https://chic-babka-35d9a7.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Netlify
+          </a>
+        </p>
       </div>
     </div>
   );

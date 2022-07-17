@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 export default function Weather() {
   return (
@@ -28,7 +29,7 @@ export default function Weather() {
       </div>
       <p className="current-date">Saturday, July 16, 2022 18:26</p>
       <div className="row">
-        <div className="c0l-8">
+        <div className="col-8">
           <h1>New York</h1>
         </div>
         <div className="col-4">

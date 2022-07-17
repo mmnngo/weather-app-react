@@ -1,3 +1,20 @@
+h1 {
+  font-size: 48px;
+  text-align: start;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: inline;
+  padding: 0;
+  text-align: start;
+}
+
+p {
+  margin: 0;
+}
+
 .App {
   text-align: center;
   color: #475053;
@@ -12,6 +29,43 @@
   background-color: #f0fbff;
   padding: 25px;
   border: 1px solid black;
+}
+
+.btn-primary {
+  background-color: #2e94b9 !important;
+}
+
+.btn-outline-primary {
+  opacity: 0.8;
+}
+
+.btn:hover {
+  transition: all 200ms ease;
+  background-color: #2e94b9;
+  border-color: #2e94b9;
+}
+
+.current-date {
+  color: #475053;
+  margin: 5px 4px;
+  text-align: start;
+}
+
+.city-temperature {
+  font-size: 48px;
+  padding: 3%;
+  position: relative;
+  top: -8px;
+}
+
+.icon {
+  text-align: center;
+}
+
+.contact-me {
+  color: black;
+  font-size: 12px;
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
