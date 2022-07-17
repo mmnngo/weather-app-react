@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="New York" />
         <p className="contact-me">
           This page was built by May Ngo and is open-sourced on{" "}
           <a
