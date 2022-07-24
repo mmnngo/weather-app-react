@@ -51,11 +51,22 @@ p {
   text-align: start;
 }
 
-.city-temperature {
+.WeatherInfo .max-min .minTemp {
+  opacity: 0.8;
+}
+
+.WeatherTemperature .temperature {
   font-size: 48px;
   padding: 3%;
   position: relative;
   top: -8px;
+}
+
+.WeatherTemperature .unit {
+  font-size: 16px;
+  position: relative;
+  line-height: 1;
+  top: -30px;
 }
 
 .icon {
