@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -45,42 +45,7 @@ export default function Weather(props) {
               </div>
             </div>
           </form>
-        </div>
-        <p className="current-date">
-          <FormattedDate date={weatherData.date} />
-        </p>
-        <div className="row">
-          <div className="col-8">
-            <h1>{weatherData.city}</h1>
-          </div>
-          <div className="col-4">
-            <span className="city-temperature">
-              {Math.round(weatherData.temperature)}
-            </span>
-            <span className="unit">°C</span>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-8">
-            <ul className="current-high-low">
-              <li className="weather-description text-capitalize">
-                {weatherData.description}
-              </li>
-              <li className="current-high-low">
-                {Math.round(weatherData.maxTemp)}°C /{" "}
-                {Math.round(weatherData.minTemp)}°C{" "}
-              </li>
-              <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind: {Math.round(weatherData.wind)} km/hr</li>
-            </ul>
-          </div>
-          <div className="col-4">
-            <img
-              src={weatherData.iconUrl}
-              alt={weatherData.description}
-              className="icon"
-            />
-          </div>
+          <WeatherInfo data={weatherData} />
         </div>
       </div>
     );
