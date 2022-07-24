@@ -18,7 +18,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
-      iconUrl: `http://openweathermap.org/img/wn/10d@2x.png`,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
   if (weatherData.ready) {
@@ -63,16 +63,21 @@ export default function Weather(props) {
         <div className="row">
           <div className="col-8">
             <ul className="current-high-low">
-              <li className="weather-description">{weatherData.description}</li>
-              <li className="current-high-low">18°C / 6°C </li>
+              <li className="weather-description text-capitalize">
+                {weatherData.description}
+              </li>
+              <li className="current-high-low">
+                {Math.round(weatherData.maxTemp)}°C /{" "}
+                {Math.round(weatherData.minTemp)}°C{" "}
+              </li>
               <li>Humidity: {weatherData.humidity}%</li>
               <li>Wind: {Math.round(weatherData.wind)} km/hr</li>
             </ul>
           </div>
           <div className="col-4">
             <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt="description"
+              src={weatherData.iconUrl}
+              alt={weatherData.description}
               className="icon"
             />
           </div>
