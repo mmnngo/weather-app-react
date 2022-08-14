@@ -11,7 +11,7 @@ function App() {
         <p className="contact-me">
           This page was built by May Ngo and is open-sourced on{" "}
           <a
-            href="https://github.com/mmnngo/weather-react"
+            href="https://github.com/mmnngo/weather-app-react"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -19,7 +19,7 @@ function App() {
           </a>{" "}
           and hosted on{" "}
           <a
-            href="https://chic-babka-35d9a7.netlify.app"
+            href="https://lucent-bunny-67fa23.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >

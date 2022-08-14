@@ -11,7 +11,7 @@ ul {
   text-align: start;
 }
 
-p {
+.WeatherInfo .current-date {
   margin: 0;
 }
 
